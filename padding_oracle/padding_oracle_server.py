@@ -3,6 +3,13 @@ from Cryptodome.Util import Padding
 from base64 import b16encode, b16decode
 import argparse
 
+class PaddingOracleError(Exception):
+    def __init__(self, message):
+        self.message = message
+
+class KeyLenError(PaddingOracleError):
+    pass
+
 class PaddingOracle:
     """
     implements a AES encryption / decryption engine
@@ -19,13 +26,10 @@ class PaddingOracle:
         VALID_VALIDATION = 1
         OTHER_ERROR = 3
 
-    class PaddingOracleError:
-        pass
 
     def __init__(self, key):
-        if len(key) is not 16:
-            print ("Key is not 16 bytes long")
-            raise PaddingOracleError
+        if len(key.encode()) is not 16:
+            raise KeyLenError("Key must be exactly 16 bytes long")
         self.key = key.encode()
 
     @staticmethod
