@@ -1,3 +1,7 @@
 build/
 venv/
 padding_oracle.py
+*.swp
+*.o
+*.out
+*.pyc
