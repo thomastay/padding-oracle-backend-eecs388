@@ -4,7 +4,7 @@ This module implements a local version of the EECS 388 padding oracle website, w
 
 For those unfamiliar, a padding oracle attack is a side-channel cryptographic attack on the AES encryption cipher, in which a server that leaks information about the validity of padding information inadvertently allows a message to be decrypted. 
 
-(https://eecs388.org)[EECS 388] is the undergraduate security class at the University of Michigan - Ann Arbor.
+[EECS 388](https://eecs388.org) is the undergraduate security class at the University of Michigan - Ann Arbor.
 
 This project is not approved or affliated with the EECS 388 department, it is an independent project.
 
