@@ -1,4 +1,4 @@
-from padding_oracle import PaddingOracle, PaddingOracleError
+from PaddingOracle import PaddingOracle, PaddingOracleError
 
 KEY = "DEADBEEFPOTATATO"
 server = PaddingOracle(KEY)
