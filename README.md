@@ -12,6 +12,8 @@ This project is not approved or affliated with the EECS 388 department, it is an
 
 Because when I was working on the padding oracle for project 1, the server often was down during critical periods. Moreover, it is slow, and when doing rapid prototyping (especially in Python), it is easy to make mistakes. This wastes time and I want to fix this for future batches.
 
+For comparison, running a padding oracle attack took about 10 minutes server wise, and only 0.3 seconds running locally.
+
 ## Cool, does this mean I don't need to do the project and I can crack the ciphertext given to us?
 
 Nope. This module does not know what the EECS388 shared key is, and even once you crack the ciphertext, AES is immune to known plaintext attacks. Do your homework, man.
