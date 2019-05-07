@@ -18,6 +18,10 @@ For comparison, running a padding oracle attack took about 10 minutes server wis
 
 Nope. This module does not know what the EECS388 shared key is, and even once you crack the ciphertext, AES is immune to known plaintext attacks. Do your homework, man.
 
+## I'm an EECS 388 instructor, and I don't think this code is appropriate
+
+Email me at ttay@umich.edu explaining why. I don't think this violates the honor code at all, since I'm just providing the same facility as the online server but in a portable and faster form. However, if you guys really feel that way, I'll take it down.
+
 # Usage
 
 This module is meant to be a drop-in replacement for the padding oracle server. Simply define the following local version of the valid padding function instead of the server one:
