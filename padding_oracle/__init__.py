@@ -1,1 +1,2 @@
-from .padding_oracle_server import PaddingOracle, KeyLenError
+from .padding_oracle_server import PaddingOracle, KeyLenError, \
+PaddingOracleError
