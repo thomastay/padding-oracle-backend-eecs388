@@ -3,7 +3,10 @@
 This module implements a local version of the EECS 388 padding oracle website, which allows you to perform easy prototyping and testing for your padding oracle projects.
 
 For those unfamiliar, a padding oracle attack is a side-channel cryptographic attack on the AES encryption cipher, in which a server that leaks information about the validity of padding information inadvertently allows a message to be decrypted. 
-EECS 388 is the undergraduate security class at the University of Michigan - Ann Arbor.
+
+(https://eecs388.org)[EECS 388] is the undergraduate security class at the University of Michigan - Ann Arbor.
+
+This project is not approved or affliated with the EECS 388 department, it is an independent project.
 
 ## Why did you do this?
 
@@ -82,8 +85,8 @@ Then, git clone this project.
 Here is my setup on Linux:
 
 ```
-git clone ???
-cd padding-oracle-eecs-388
+git clone git@github.com:thomastay/padding-oracle-backend-eecs388.git
+cd padding-oracle-backend-eecs388
 python3 -m venv venv/
 source venv/bin/activate
 pip install pycryptodomex
